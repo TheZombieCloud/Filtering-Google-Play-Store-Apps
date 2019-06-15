@@ -15,10 +15,30 @@ class Game:
         self._update = update2
         self._cversion = cversion
         self._aversion = aversion
-    def __str__(self):
-        return str("Reviews: " + self._reviews)
+    #def __str__(self):
+        #return str("Reviews: " + self._reviews)
 
-
+class Interface:
+    def __str__:
+        print ("|          Google Play Apps Filtering          |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|    1. Filter by Rating and No. of Reviews    |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|    2. Filter by Contenting Rating and Price  |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|    Enter the Number of the Option you wish   |")
+        print ("|              to choose (1 or 2).             |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|                                              |")
+        print ("|                                              |")
 
 Objects = []
 
@@ -38,9 +58,6 @@ with open("googleplaystore.csv", encoding = "Latin-1") as filein:
 
 for i in Ratings.keys():
     Ratings[i].sort(key = lambda x: int(x._reviews))
-    for _ in Ratings[i]:
-        print (_)
-    print("\n")
         
         
         
