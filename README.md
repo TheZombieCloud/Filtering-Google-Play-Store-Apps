@@ -25,3 +25,13 @@ More info can be found on Kaggle.com: https://www.kaggle.com/lava18/google-play-
 ## Data Structures
 
 The data structures I used include a dictionary of dictionaries of lists of objects, and two dictionaries of lists. Let's call the first data structure I used "Data A" and the second data structure I used "Data B" for simplicity. I used Data B to store objects for use if the user were to choose the 1st filtering option. The first Data B data structure is used to store the objects, with the second used to store the number of reviews. The first data structure is created to print the objects to console when filtered, with the second data structure used so Python's built-in binary search actually works. I used Data A to store objects for the second filtering option. The nested dictionaries are used for ease of convenience and lower time complexity. The lists in the dictionaries stores the objects that will be printed to console depending on what the user wants to filter for the second filtering option.
+
+## Filtering Options
+
+This program includes two filtering options. One that filters based on ratings and number of reviews. Another that filters based on type and content rating.
+
+The first filtering option filters based on ratings and number of reviews. Given a specific rating, and a range of the number of reviews, the program will print out all application names that have that specific rating and have a number of reviews within the range specified.
+
+The second filtering option filters based on type and content rating. Given a type, either paid or free, and a specific content rating, the program will filter out all results without those specific properties and will print all application names with those specific properties.
+
+Filtered applications will be printed out to the console in alphabetical order.
